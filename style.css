@@ -56,7 +56,7 @@ header .logo {
   max-width: 1540px;
   height: 700px;
 }
-img {
+.image-wrapper img {
   width: 100%;
   height: 100vh;
 }
@@ -412,6 +412,7 @@ footer ul a {
 .footer-block2 form input {
   height: 40px;
   width: 230px;
+  border-color: #0865de;
   padding-left: 15px;
   vertical-align: middle;
 }
@@ -419,8 +420,7 @@ footer ul a {
   color: #959595;
   font-size: 11px;
 }
-.footer-block2 form a {
-  text-decoration: none;
+.footer-block2 form button {
   color: #fff;
   background-color: #0865de;
   padding: 10.7px 15px;
@@ -428,6 +428,7 @@ footer ul a {
   margin-left: -5px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-color: #0865de;
 }
 form label {
   margin-left: 100px;
@@ -474,6 +475,9 @@ form input {
 @media (max-width: 375px) {
   nav {
     display: none;
+  }
+  .image-wrapper img {
+    object-fit: cover;
   }
   .burger {
     display: flex;
@@ -531,6 +535,40 @@ form input {
     margin-top: 60px;
     margin-left: 30px;
   }
+  .second-img-wrapper img {
+    object-fit: cover;
+  }
+  .footer-block1 {
+    height: 150px;
+  }
+  .block1-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .block1-2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .row2-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .row2-2 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .footer-block2 {
+    display: grid;
+    grid-column-start: 1;
+    width: 374px;
+    height: 268px;
+    margin-top: 450px;
+  }
+  form input {
+    margin-left: 50px;
+  }
+
   /* .gray-text-display-none {
     display: flex;
     justify-content: space-between;
@@ -543,6 +581,16 @@ form input {
     grid-template-columns: repeat(1, 3fr);
     row-gap: 29.65px;
   }
+  .footer-second-text {
+    display: none;
+  }
+  .footer-block2 h3 {
+    padding-bottom: 30px;
+  }
+  .black-circle {
+    margin-left: 27px;
+  }
+
   /* }
   .footer-container {
     display: block;
