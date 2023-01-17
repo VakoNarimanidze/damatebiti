@@ -222,6 +222,7 @@ button {
 }
 .second-img-wrapper img {
   margin-top: 90px;
+  width: 100%;
 }
 .project-recents {
   max-width: 1200px;
